@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node ./dist/server.js",
-    "compile": "node ./node_modules/typescript/bin/tsc -p ./src && node ./node_modules/typescript/bin/tsc -p ./client && cp -r views dist/ && cp -r public dist/"
+    "compile": "tsc -p ./src && tsc -p ./client && cp -r views dist/ && cp -r public dist/"
   },
   "dependencies": {
     "@types/node": "^12.0.0",

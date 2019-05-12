@@ -1,0 +1,8 @@
+
+
+#WebStorm ile ilgili dosyalar
+**/.idea/
+
+
+/dist/
+/node_modules/
