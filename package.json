@@ -6,8 +6,8 @@
   "sourceMap": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node ./dist/server.js",
-    "compile": "tsc -p ./src && tsc -p ./client && cp -r views dist/ && cp -r public dist/"
+    "start": "node ./src/server.js",
+    "compile": "tsc -p ./src && tsc -p ./public/javascripts"
   },
   "dependencies": {
     "@types/node": "^12.0.0",

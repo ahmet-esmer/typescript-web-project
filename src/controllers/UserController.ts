@@ -1,7 +1,5 @@
-//   /src/controllers/crmController.t
 import { Request, Response } from 'express';
 import {UserModel} from "../models/UserModel";
-
 
 
 export class UserController {
@@ -9,10 +7,9 @@ export class UserController {
 
     public index(req: Request, res: Response) {
 
-
         res.render('index' , {
             title: "Ana Sayfa",
-            serverSideMessage: 'TypeScript Server Tarafında çalıştı'
+            serverSideMessage: 'TypeScript Server Tarafında çalıştı 1'
         });
     }
 
@@ -21,7 +18,6 @@ export class UserController {
         res.status(200).send({
             message: 'POST request successfulll!!!!'
         })
-
     }
 
 

@@ -1,10 +1,5 @@
-// /src/routes/Routes.ts
-import {Request, Response} from "express";
 
-// /src/routes/Routes.ts
 import { UserController } from "../controllers/UserController";
-
-
 
 
 export class Routes {

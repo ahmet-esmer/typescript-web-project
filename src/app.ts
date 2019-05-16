@@ -1,11 +1,8 @@
-
-
 import * as express from "express";
 import * as bodyParser from "body-parser";
 import { Routes } from "./routes/Routes";
 
 import * as path from 'path';
-
 
 
 class App {
@@ -19,7 +16,7 @@ class App {
         this.app.set("view engine", "ejs");
         this.app.set("views", path.join(__dirname, "../views/pages"));
 
-        this.app.use('/static', express.static(path.join(__dirname, 'public')))
+        this.app.use('/public', express.static(path.join(__dirname, '../public')))
 
         this.config();
         this.routePrv.routes(this.app);
